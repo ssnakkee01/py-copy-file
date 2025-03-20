@@ -1,6 +1,6 @@
 def copy_file(command: str) -> None:
     elements = command.split()
-    if len(elements) != 3 or elements[0] != "cp":
+    if len(elements) != 3 and elements[0] != "cp":
         return
 
     _, source_file, destination_file = elements
